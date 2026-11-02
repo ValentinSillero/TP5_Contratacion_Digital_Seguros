@@ -1,0 +1,7 @@
+# Configuración local del editor / asistentes
+.claude/
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
