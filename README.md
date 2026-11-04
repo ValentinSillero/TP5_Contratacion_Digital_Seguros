@@ -7,7 +7,7 @@ Cubrí Seguros es el front-end de un checkout para contratar un seguro de celula
 > **Alcance:** no hay backend, base de datos ni pagos reales. Los planes salen de un JSON local y el pago es una función que simula la respuesta según el número de tarjeta.
 
 - **Diseño base:** [Figma — Práctica · Contratación Digital de Seguros](https://www.figma.com/design/vJrfOUfiOI7OSeTtRfCloh), páginas *Mobile · 390* y *Desktop · 1440*.
-- **Sitio publicado:** _(completar con la URL después del deploy)_
+- **Sitio publicado:** [contratacionseguros.vercel.app](https://contratacionseguros.vercel.app/)
 
 ---
 
@@ -190,43 +190,11 @@ Capturas tomadas del sitio funcionando en un navegador real.
 |---|
 | ![Éxito desktop](docs/capturas/desktop-06-exito.jpg) |
 
-## Publicación
+## Sitio desplegado
 
-Es un sitio estático: no necesita build. Cualquiera de estas opciones sirve.
+El proyecto se encuentra publicado en Vercel y se puede acceder desde el siguiente enlace:
 
-### GitHub Pages
-
-1. Subí el proyecto a un repositorio de GitHub (con `index.html` en la raíz).
-2. En el repo: **Settings → Pages**.
-3. En *Build and deployment* elegí **Deploy from a branch**, rama `main` y carpeta `/ (root)`.
-4. Guardá. A los pocos minutos queda publicado en `https://<usuario>.github.io/<repositorio>/`.
-
-### Netlify
-
-1. Entrá a [app.netlify.com](https://app.netlify.com) → **Add new site → Import an existing project**.
-2. Conectá el repositorio de GitHub.
-3. Dejá el *build command* vacío y poné `.` como *publish directory*.
-4. **Deploy**. (También se puede arrastrar la carpeta del proyecto a *Netlify Drop*.)
-
-### Firebase Hosting
-
-```bash
-npm install -g firebase-tools
-```
-
-```bash
-firebase login
-```
-
-```bash
-firebase init hosting
-```
-
-Cuando pregunte el directorio público, respondé `.`; a "single-page app" respondé que no.
-
-```bash
-firebase deploy
-```
+[Ver Cubrí Seguros](https://contratacionseguros.vercel.app/)
 
 ## Checklist de la consigna
 
@@ -237,4 +205,4 @@ firebase deploy
 - [x] La tarjeta 4000 0000 0000 0002 lleva al error y "Reintentar" vuelve al pago con todo cargado.
 - [x] La póliza tiene formato `POL-AAAA-NNNNNN`.
 - [x] No hay errores en la consola del navegador.
-- [ ] El sitio está publicado y el README tiene la URL.
+- [x] El sitio está publicado y el README tiene la URL.
